@@ -1,0 +1,235 @@
+/* Estilos generales */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Encabezados */
+h1, h2, h3 {
+  font-family: 'Playfair Display', serif;
+  color: #00c4cc; /* Celeste vibrante */
+  text-align: center;
+}
+
+/* Enlaces */
+a {
+  color: #00c4cc;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #02a3a9; /* Un tono más oscuro de celeste */
+}
+
+/* Cabecera */
+header {
+  background: linear-gradient(90deg, #000000, #1e1e1e);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.header-content h1 {
+  margin: 0;
+  font-size: 2.5em;
+}
+
+.header-content p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+/* Menú de navegación */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #ffffff;
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #00c4cc;
+  color: #000000;
+}
+
+/* Sección principal */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+section img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+}
+
+/* Tarjetas */
+.card {
+  background: #1e1e1e;
+  padding: 20px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  text-align: left;
+}
+
+.card h3 {
+  color: #00c4cc;
+}
+
+.card p {
+  margin-top: 10px;
+}
+
+/* Tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+thead th {
+  background: #00c4cc;
+  color: #000000;
+  padding: 10px;
+  text-align: center;
+}
+
+tbody td {
+  background: #1e1e1e;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #333333;
+}
+
+tbody tr:hover {
+  background: #333333;
+}
+
+/* Video */
+video {
+  max-width: 100%;
+  margin-top: 20px;
+  border: 2px solid #00c4cc;
+  border-radius: 10px;
+}
+
+/* Formulario */
+form {
+  background: #1e1e1e;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+  text-align: left;
+  margin: 20px auto;
+  max-width: 600px;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #00c4cc;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: none;
+  border-radius: 5px;
+  background: #333333;
+  color: #ffffff;
+}
+
+form input:focus, form textarea:focus {
+  outline: 2px solid #00c4cc;
+}
+
+form button {
+  background: #00c4cc;
+  color: #000000;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+form button:hover {
+  background: #02a3a9;
+  color: #ffffff;
+}
+
+/* Pie de página */
+footer {
+  background: #000000;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.9em;
+  color: #666666;
+}
+
+footer a {
+  color: #00c4cc;
+  margin: 0 5px;
+}
+
+footer a:hover {
+  color: #02a3a9;
+}
+/* Imágenes responsivas */
+img {
+  max-width: 100%; /* La imagen no será más grande que su contenedor */
+  height: auto; /* Ajusta la altura proporcionalmente */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+/* Estilo para la sección de redes sociales */
+.social-links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+}
+
+.social-links img {
+  width: 40px; /* Tamaño del icono */
+  height: 40px;
+  border-radius: 50%; /* Redondear los iconos */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para destacar */
+}
+
+.social-links a:hover {
+  transform: scale(1.2); /* Agranda el icono al pasar el ratón */
+}

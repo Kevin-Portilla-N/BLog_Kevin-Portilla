@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="sobre_mi.html">Sobre Mí</a></li>
+        <li><a href="publicaciones.html">Publicaciones</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+  <h2>Envíame un Mensaje</h2>
+  <form onsubmit="return enviarCorreo();">
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" placeholder="Tu número de teléfono" required>
+
+    <label for="email">Correo:</label>
+    <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+
+    <label for="mensaje">Mensaje:</label>
+    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+    <button type="submit">Enviar</button>
+  </form>
+</section>
+
+<script>
+  function enviarCorreo() {
+    // Obtener los valores ingresados por el usuario
+    const nombre = document.getElementById('nombre').value;
+    const telefono = document.getElementById('telefono').value;
+    const email = document.getElementById('email').value;
+    const mensaje = document.getElementById('mensaje').value;
+
+    // Crear el cuerpo del correo con la información detallada
+    const asunto = "Contactarme necesito información";
+    const cuerpo = `
+      Nombre: ${nombre}
+      Teléfono: ${telefono}
+      Correo: ${email}
+      Mensaje: ${mensaje}
+    `;
+
+    // Redirigir al cliente de correo con mailto
+    window.location.href = `mailto:kaportilla@utpl.edu.ec?subject=${encodeURIComponent(asunto)}&body=${encodeURIComponent(cuerpo)}`;
+
+    // Evitar el envío real del formulario
+    return false;
+  }
+</script>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Kevin Portilla Blog's Personal</p>
+  </footer>
+</body>
+</html>
